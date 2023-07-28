@@ -1,7 +1,5 @@
-package com.invu.domaint.posts;
+package com.invu.domain.posts;
 
-import com.invu.domain.posts.Posts;
-import com.invu.domain.posts.PostsRepository;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
