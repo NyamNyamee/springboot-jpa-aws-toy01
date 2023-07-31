@@ -1,9 +1,0 @@
-spring:
-  jpa:
-    show-sql: true  # 실행된 쿼리 콘솔 출력
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQL5InnoDBDialect  # mysql문법 적용
-  h2:
-    console:
-      enabled: true
