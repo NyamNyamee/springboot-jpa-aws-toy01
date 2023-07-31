@@ -2,7 +2,6 @@ package com.invu.web;
 
 import com.invu.domain.posts.Posts;
 import com.invu.domain.posts.PostsRepository;
-import com.invu.web.dto.PostsResponseDto;
 import com.invu.web.dto.PostsSaveRequestDto;
 import com.invu.web.dto.PostsUpdateRequestDto;
 import org.junit.After;
@@ -20,7 +19,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
 
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)

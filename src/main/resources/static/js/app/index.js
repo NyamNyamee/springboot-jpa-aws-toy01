@@ -1,4 +1,4 @@
-var main = {
+const index = {
     init : function () {
         var _this = this;
         $('#btn-save').on('click', function () {
@@ -27,7 +27,6 @@ var main = {
             contentType:'application/json; charset=utf-8',
             data: JSON.stringify(data)
         }).done(function() {
-            alert('글이 등록되었습니다.');
             window.location.href = '/';
         }).fail(function (error) {
             alert(JSON.stringify(error));
@@ -48,7 +47,6 @@ var main = {
             contentType:'application/json; charset=utf-8',
             data: JSON.stringify(data)
         }).done(function() {
-            alert('글이 수정되었습니다.');
             window.location.href = '/';
         }).fail(function (error) {
             alert(JSON.stringify(error));
@@ -63,7 +61,6 @@ var main = {
             dataType: 'json',
             contentType:'application/json; charset=utf-8'
         }).done(function() {
-            alert('글이 삭제되었습니다.');
             window.location.href = '/';
         }).fail(function (error) {
             alert(JSON.stringify(error));
@@ -72,4 +69,4 @@ var main = {
 
 };
 
-main.init();
+index.init();
