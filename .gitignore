@@ -42,4 +42,4 @@ bin/
 .DS_Store
 
 ### oauth properties ###
-application-oauth.properties
+application-oauth.yml
