@@ -22,7 +22,7 @@ public class IndexController {
     public String index(Model model) {
         model.addAttribute("posts", postsService.findAllDesc());  // 게시글 리스트
         SessionUser user = (SessionUser) httpSession.getAttribute("user");
-        if (user != null) model.addAttribute("username", user.getName());  // 세션에 유저 정보 존재 시
+        if (user != null) model.addAttribute("userName", user.getName());  // 세션에 유저 정보 존재 시
         return "index";
     }
 
