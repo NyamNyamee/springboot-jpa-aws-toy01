@@ -13,7 +13,7 @@ public class WebConfig implements WebMvcConfigurer {
     private final LoginUserArgumentResolver loginUserArgumentResolver;
 
     @Override
-    public void addArgumentResolvers(List<HandlerMethodArgumentResolver> argumentResolvers) {
+    public void addArgumentResolvers(List<HandlerMethodArgumentResolver> argumentResolvers) {  // url 호출 시 컨트롤러 메서드 검사 대상에 리졸버 추가
         argumentResolvers.add(loginUserArgumentResolver);
     }
 }
